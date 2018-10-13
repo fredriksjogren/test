@@ -47,7 +47,7 @@ public class Dog {
 
     public String toString() {
 
-        String print ="Name: "+ getName()+" Age: " + getAge()+" years"+" Weight: " + getWeight()+" kg";
+        String print ="Name: "+ getName()+" Age: " + getAge()+" years"+ " Weight: " + getWeight()+" kg";
 
         return print;
     }
