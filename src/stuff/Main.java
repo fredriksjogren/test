@@ -24,7 +24,10 @@ public class Main {
 	    String answer = io.bakisCheck();
 	    bakfull.areYouBakis(answer);
 
+	    didYouSleepEnuf sleeping = new didYouSleepEnuf();
 
+	    double sleep = io.readDouble();
+	    sleeping.isItEnuf(sleep);
     }
 
     public static void someShittyMethod(int a, int b){
