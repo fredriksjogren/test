@@ -34,14 +34,20 @@ public class Pokemon {
         this.hp = hp;
     }
 
-    public String throwAPokeballAt(String name){
+
+    public Pokemon throwAPokeballAt(Pokemon somePokemon){
         Random rnd = new Random();
         int catchRate = rnd.nextInt(2)+1;
         if(catchRate == 1){
-            return "You got " + name + "........ or did you...";
-        }else if(catchRate == 2){
-            return "You failed";
+            System.out.println(somePokemon + " was caught! :D");
+            return somePokemon;
         }
-        return "";
+        System.out.println(somePokemon + " got away...");
+        return null;
+    }
+
+    @Override
+    public String toString() {
+        return this.name;
     }
 }

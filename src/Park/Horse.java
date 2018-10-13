@@ -1,4 +1,4 @@
-package Park;
+package HeadFirst;
 
 public class Horse extends Dog {
 
