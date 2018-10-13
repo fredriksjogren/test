@@ -1,8 +1,8 @@
-package test.src.stuff;
+package stuff;
 
 public class didYouSleepEnuf {
 
-    public void isItEnuf() {
+    public void isItEnuf(double number) {
         if(number < 7){
             System.out.println("uh oh, you should sleep more");
         } else {
