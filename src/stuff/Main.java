@@ -16,7 +16,7 @@ public class Main {
 
 	    String answer = io.bakisCheck();
 	    bakfull.areYouBakis(answer);
-        
+
 
     }
 
