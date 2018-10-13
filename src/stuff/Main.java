@@ -26,6 +26,8 @@ public class Main {
 
 	    didYouSleepEnuf sleeping = new didYouSleepEnuf();
 
+	    //pls keep it to a double
+	    System.out.println("Enter a number for the amount of hours you slept:");
 	    double sleep = io.readDouble();
 	    sleeping.isItEnuf(sleep);
     }
