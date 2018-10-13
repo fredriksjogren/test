@@ -1,5 +1,7 @@
 package stuff;
 
+import java.util.ArrayList;
+
 public class Hook {
 
 
@@ -7,6 +9,7 @@ public class Hook {
     private double hours;
     private double pricePerHour;
     private String std;
+    ArrayList<Hook> hooks;
 
 
     public Hook(String name, double hours, double pricePerHour, String std) {
@@ -15,6 +18,8 @@ public class Hook {
         this.hours = hours;
         this.pricePerHour = pricePerHour;
         this.std = std;
+        this.hooks = new ArrayList<>();
+        
 
 
     }
