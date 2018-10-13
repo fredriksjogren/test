@@ -8,8 +8,10 @@ public class Main {
 	    someShittyMethod(a, b);
 
 	    CoolStuff coolBanana = new CoolStuff("Banana");
+	    CoolStuff coolTable = new CoolStuff("Table");
 
 	    coolBanana.doSomethingCool();
+	    coolTable.doSomethingCool();
 
     }
 
