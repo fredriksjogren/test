@@ -38,6 +38,12 @@ public class Main {
         String answer = io.bakisCheck();
         bakfull.areYouBakis(answer);
 
+        IsTheBassBilli billibass = new IsTheBassBilli();
+
+        double price = io.bassCheck();
+        billibass.isBassBilli(price);
+        
+
         didYouSleepEnuf sleeping = new didYouSleepEnuf();
 
         //pls keep it to a double
