@@ -29,6 +29,12 @@ public class IO { //Using this we don't have to print or read in the code.
         return answer;
     }
 
+    public double bassCheck(){
+        System.out.println("How much did the beer cost you?");
+        double answer = input.nextDouble();
+        return answer;
+    }
+
     public void printSomething(String thing){
 
         System.out.println(thing);
