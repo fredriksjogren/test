@@ -6,6 +6,11 @@ public class Main {
 	    int a = 5;
 	    int b = 10;
 	    someShittyMethod(a, b);
+
+	    CoolStuff coolBanana = new CoolStuff("Banana");
+
+	    coolBanana.doSomethingCool();
+
     }
 
     public static void someShittyMethod(int a, int b){
