@@ -1,13 +1,17 @@
 package stuff;
 
 import java.util.ArrayList;
+
 import java.util.HashSet;
 import java.util.Random;
+
 
 public class Main {
     ArrayList<Pokemon> pokemonPc = new ArrayList<>();
     ArrayList<Pokemon> wildPokemons = new ArrayList<>();
     HashSet<Pokemon> pokedex = new HashSet<>();
+
+    ArrayList<Hook> hooks = new ArrayList<>();
 
     public static void main(String[] args) {
         IO io = new IO();
@@ -68,7 +72,9 @@ public class Main {
         coolTable.doSomethingCool();
     }
 
+
     public void runBakisChecker() {
+
         BakisChecker bakfull = new BakisChecker();
         IO io = new IO();
 
@@ -93,6 +99,33 @@ public class Main {
         double sleep = io.readDouble();
         sleeping.isItEnuf(sleep);
     }
+
+
+    public void addHooks(Hook someHook){
+        hooks.add(someHook);
+    }
+
+    public void wantToGetCrazy(){
+        String option = null;
+        Hook newHook = new Hook("candy",2,0.5,"All of them..");
+        System.out.println(newHook.getName());
+        System.out.println("Want to get crazy with me?");
+        //add io
+        if(option.equalsIgnoreCase("yes")){
+            System.out.println(newHook.getName()+" and you had a great time for"+newHook.getHours()+"hours");
+        }else
+            System.out.println("okey... are u poor or just just a tame person...");
+    }
+
+    public static void someShittyMethod(int a, int b) {
+        System.out.println(a * b + b);
+    }
+
+    //method that takes an integer and prints 5 :)
+    public static void thisIsACoolMethod(int a) {
+        System.out.println(5);
+    }
+
 
 
 }
