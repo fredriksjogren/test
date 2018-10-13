@@ -18,6 +18,13 @@ public class Main {
 	    coolTable.doSomethingCool();
 
 
+	    BakisChecker bakfull = new BakisChecker();
+	    IO io = new IO();
+
+	    String answer = io.bakisCheck();
+	    bakfull.areYouBakis(answer);
+
+
     }
 
     public static void someShittyMethod(int a, int b){
