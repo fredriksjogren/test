@@ -9,6 +9,6 @@ public class Main {
     }
 
     public static void someShittyMethod(int a, int b){
-        System.out.println(a+b);
+        System.out.println(a*b);
     }
 }
