@@ -10,6 +10,14 @@ public class Main {
 	    Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
 	    String status = pikachu.throwAPokeballAt("Pikachu");
         System.out.println(status);
+
+	    CoolStuff coolBanana = new CoolStuff("Banana");
+	    CoolStuff coolTable = new CoolStuff("Table");
+
+	    coolBanana.doSomethingCool();
+	    coolTable.doSomethingCool();
+
+
     }
 
     public static void someShittyMethod(int a, int b){
