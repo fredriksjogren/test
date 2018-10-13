@@ -1,15 +1,19 @@
 package stuff;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Random;
+
 public class Main {
+    ArrayList<Pokemon> pokemonPc = new ArrayList<>();
+    ArrayList<Pokemon> wildPokemons = new ArrayList<>();
+    HashSet<Pokemon> pokedex = new HashSet<>();
 
     public static void main(String[] args) {
+        Main main = new Main();
 	    int a = 5;
 	    int b = 10;
 	    someShittyMethod(a, b);
-
-	    Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
-	    String status = pikachu.throwAPokeballAt("Pikachu");
-        System.out.println(status);
 
 	    CoolStuff coolBanana = new CoolStuff("Banana");
 	    CoolStuff coolTable = new CoolStuff("Table");
@@ -17,7 +21,35 @@ public class Main {
 	    coolBanana.doSomethingCool();
 	    coolTable.doSomethingCool();
 
+        main.spawnWildPokemons();
+	    Pokemon wildPokemon = main.aWildPokemonAppears();
+	    wildPokemon.throwAPokeballAt(wildPokemon);
+	    if(wildPokemon != null){
+	        main.pokemonPc.add(wildPokemon);
+        }
 
+
+
+    }
+    public void spawnWildPokemons(){
+        Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
+        Pokemon odish = new Pokemon("Oddish", "Grass");
+        Pokemon slowpoke = new Pokemon("Slowpoke", "Normal");
+        Pokemon koffing = new Pokemon("Koffing", "Poison");
+        Pokemon squirtle = new Pokemon("Squirtle", "Water");
+
+        wildPokemons.add(pikachu);
+        wildPokemons.add(odish);
+        wildPokemons.add(slowpoke);
+        wildPokemons.add(koffing);
+        wildPokemons.add(squirtle);
+    }
+    public Pokemon aWildPokemonAppears(){
+        Random rnd = new Random();
+        int indexPokemonToSpawn = rnd.nextInt(wildPokemons.size());
+        Pokemon pokemonToSpawn = wildPokemons.get(indexPokemonToSpawn);
+        System.out.println("A wild " + pokemonToSpawn + " appears!!!");
+        return pokemonToSpawn;
     }
 
     public static void someShittyMethod(int a, int b){
@@ -28,6 +60,7 @@ public class Main {
     public static void thisIsACoolMethod(int a){
         System.out.println(5);
     }
+
 
 
 
