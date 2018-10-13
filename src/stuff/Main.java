@@ -10,6 +10,7 @@ public class Main {
     HashSet<Pokemon> pokedex = new HashSet<>();
 
     public static void main(String[] args) {
+
         Main main = new Main();
 	    int a = 5;
 	    int b = 10;
@@ -18,8 +19,9 @@ public class Main {
 	    CoolStuff coolBanana = new CoolStuff("Banana");
 	    CoolStuff coolTable = new CoolStuff("Table");
 
-	    coolBanana.doSomethingCool();
-	    coolTable.doSomethingCool();
+
+        coolBanana.doSomethingCool();
+        coolTable.doSomethingCool();
 
         main.spawnWildPokemons();
 	    Pokemon wildPokemon = main.aWildPokemonAppears();
@@ -30,6 +32,18 @@ public class Main {
 
 
 
+        BakisChecker bakfull = new BakisChecker();
+        IO io = new IO();
+
+        String answer = io.bakisCheck();
+        bakfull.areYouBakis(answer);
+
+        didYouSleepEnuf sleeping = new didYouSleepEnuf();
+
+        //pls keep it to a double
+        System.out.println("Enter a number for the amount of hours you slept:");
+        double sleep = io.readDouble();
+        sleeping.isItEnuf(sleep);
     }
     public void spawnWildPokemons(){
         Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
@@ -52,15 +66,14 @@ public class Main {
         return pokemonToSpawn;
     }
 
-    public static void someShittyMethod(int a, int b){
-        System.out.println(a*b+b);
+    public static void someShittyMethod(int a, int b) {
+        System.out.println(a * b + b);
     }
 
     //method that takes an integer and prints 5 :)
-    public static void thisIsACoolMethod(int a){
+    public static void thisIsACoolMethod(int a) {
         System.out.println(5);
     }
-
 
 
 
