@@ -16,7 +16,7 @@ public class Main {
     public static void main(String[] args) {
         IO io = new IO();
         Main program = new Main();
-        program.run
+        program.runPokemonGame();
         
 
     }
@@ -48,12 +48,14 @@ public class Main {
         Pokemon slowpoke = new Pokemon("Slowpoke", "Normal");
         Pokemon koffing = new Pokemon("Koffing", "Poison");
         Pokemon squirtle = new Pokemon("Squirtle", "Water");
+        Pokemon billibass = new Pokemon("Billi bäss", "Gott");
 
         wildPokemons.add(pikachu);
         wildPokemons.add(odish);
         wildPokemons.add(slowpoke);
         wildPokemons.add(koffing);
         wildPokemons.add(squirtle);
+        wildPokemons.add(billibass);
     }
 
     public Pokemon aWildPokemonAppears() {
@@ -115,15 +117,6 @@ public class Main {
             System.out.println(newHook.getName()+" and you had a great time for"+newHook.getHours()+"hours");
         }else
             System.out.println("okey... are u poor or just just a tame person...");
-    }
-
-    public static void someShittyMethod(int a, int b) {
-        System.out.println(a * b + b);
-    }
-
-    //method that takes an integer and prints 5 :)
-    public static void thisIsACoolMethod(int a) {
-        System.out.println(5);
     }
 
 
