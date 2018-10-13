@@ -37,12 +37,13 @@ public class Pokemon {
 
     public Pokemon throwAPokeballAt(Pokemon somePokemon){
         Random rnd = new Random();
-        int catchRate = rnd.nextInt(2)+1;
-        if(catchRate == 1){
+        int catchRate = rnd.nextInt(100)+1;
+        if(catchRate > 40){
             System.out.println(somePokemon + " was caught! :D");
             return somePokemon;
+        }else{
+            System.out.println(somePokemon + " got away...");
         }
-        System.out.println(somePokemon + " got away...");
         return null;
     }
 
