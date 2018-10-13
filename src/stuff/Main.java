@@ -7,11 +7,16 @@ public class Main {
 	    int b = 10;
 	    someShittyMethod(a, b);
 
+	    Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
+	    String status = pikachu.throwAPokeballAt("Pikachu");
+        System.out.println(status);
+
 	    CoolStuff coolBanana = new CoolStuff("Banana");
 	    CoolStuff coolTable = new CoolStuff("Table");
 
 	    coolBanana.doSomethingCool();
 	    coolTable.doSomethingCool();
+
 
     }
 
@@ -23,5 +28,7 @@ public class Main {
     public static void thisIsACoolMethod(int a){
         System.out.println(5);
     }
+
+
 
 }
