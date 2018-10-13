@@ -31,7 +31,7 @@ public class Hook {
         return price;
     }
 
-    public String getStd() {
+    public String getStd() {//test
         return std;
     }
 }
