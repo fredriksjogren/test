@@ -20,6 +20,6 @@ public class Main {
     //method that takes an integer and prints 5 :)
     public static void thisIsACoolMethod(int a){
         System.out.println(5);
-    }
+    } // wow great job man! // Fredrik
 
 }
