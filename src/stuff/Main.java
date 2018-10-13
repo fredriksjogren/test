@@ -6,6 +6,10 @@ public class Main {
 	    int a = 5;
 	    int b = 10;
 	    someShittyMethod(a, b);
+
+	    Pokemon pikachu = new Pokemon("Pikachu", "Lightning");
+	    String status = pikachu.throwAPokeballAt("Pikachu");
+        System.out.println(status);
     }
 
     public static void someShittyMethod(int a, int b){
@@ -16,5 +20,7 @@ public class Main {
     public static void thisIsACoolMethod(int a){
         System.out.println(5);
     }
+
+
 
 }
